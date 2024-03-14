@@ -1,0 +1,60 @@
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  background: linear-gradient(180deg, #0c0c1d, #161642);
+  cursor: default;
+}
+.spann {
+  h2 {
+    font-weight: bold;
+    font-size: 37px;
+    transition: 1s;
+    margin-left: 80%;
+    display: flex;
+  }
+  h2:hover {
+    color: skyblue;
+    text-shadow: 0 0 7px skyblue, 0 0 20px skyblue;
+  }
+}
+
+.social {
+  display: flex;
+  gap: 20px;
+
+  img {
+    width: 40px;
+    border-radius: 5px;
+  }
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "DM SANS", sans-serif;
+  color: lightgray;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+section {
+  height: 100vh;
+  scroll-snap-align: center;
+}
+@mixin mobile {
+  @media (max-width: 738px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (max-width: 1366px) {
+    @content;
+  }
+}

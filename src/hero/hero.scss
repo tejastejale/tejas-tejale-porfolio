@@ -1,0 +1,150 @@
+@import "../app.scss";
+.hero {
+  height: calc(100vh - 100px);
+  background: linear-gradient(180deg, #0c0c1d, #161642);
+  overflow: hidden;
+  position: relative;
+
+  .wrapper {
+    max-width: 1366px;
+    height: 100%;
+    margin: auto;
+    margin-left: 8.2%;
+  }
+
+  .textcon {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+
+    @include mobile {
+      height: 50%;
+      // width: 100%;
+      text-align: center;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+    }
+  }
+  .simg {
+    width: 50px;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  h2 {
+    font-size: 66px;
+    transition: 1s;
+
+    @include mobile {
+      font-size: 25px;
+    }
+  }
+
+  h1 {
+    font-size: 30px;
+    color: skyblue;
+    letter-spacing: 2px;
+    transition: 1s;
+
+    @include mobile {
+      margin-top: -15%;
+      font-size: 20px;
+    }
+  }
+  h1:hover {
+    color: skyblue;
+    text-shadow: 0 0 7px skyblue, 0 0 70px skyblue;
+  }
+  // h2:hover{
+  //     color: skyblue;
+  //     text-shadow:
+  //     0 0 3px skyblue,
+  //     0 0 50px skyblue;
+  // }
+
+  .imgcon {
+    height: 0;
+    top: 0;
+    right: 0;
+    margin-right: -280px;
+    margin-top: -30px;
+    position: absolute;
+    // width: 1000px;
+    // background-color: linear-gradient(180deg,#0c0c1d,#161642);
+    // background: linear-gradient(180deg,#0c0c1d,#161642);
+
+    @include mobile {
+      height: 60%;
+      width: 100%;
+      top: unset;
+      bottom: 0;
+    }
+
+    img {
+      max-width: 1300px;
+      //max-height: 850px;
+      width: 100%;
+
+      //height: 100%;
+      // display: flex;
+      object-fit: cover;
+
+      @include mobile {
+        width: 100%;
+        height: 100%;
+        // margin-top: 0%;
+        margin-left: -65%;
+
+        align-items: center;
+        justify-items: center;
+        justify-self: center;
+        justify-content: center;
+        // float: left;
+        // position: sticky;
+      }
+    }
+  }
+
+  a {
+    cursor: pointer;
+  }
+
+  .buttons {
+    cursor: pointer;
+    z-index: 1;
+    display: inline-flex;
+  }
+  button {
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+    font-weight: 300px;
+    z-index: 5;
+
+    @include mobile {
+    }
+  }
+  h3 {
+    z-index: 1;
+  }
+  .slidetext {
+    position: absolute;
+    font-size: 60vh;
+    bottom: -120px;
+    white-space: nowrap;
+    color: #ffffff09;
+    width: 50%;
+    font-weight: bold;
+    z-index: 0;
+  }
+}
