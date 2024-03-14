@@ -4,7 +4,7 @@ import Hero from './hero/Hero.jsx';
 import Navbar from "./navbar/Navbar.jsx";
 import Parallax from './parallax/Parallax.jsx';
 import Portfolio from './portfolio/Portfolio.jsx';
-import Services from './services/services.jsx';
+import Services from './services/Services.jsx';
 
 const App = () => {
   return <div>
